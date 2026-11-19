@@ -64,7 +64,8 @@
   "pnpm": {
     "overrides": {
       "picomatch@<4": "^2.3.2",
-      "vite@^7": "^7.3.2"
+      "vite@^7": "^7.3.2",
+      "uuid@>=8.0.0 <9.0.0": "^11.1.1"
     }
   },
   "devDependencies": {
@@ -89,5 +90,10 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.56.1",
     "valibot": "^1.2.0"
+  },
+  "//lockwright": {
+    "pnpm.overrides": {
+      "uuid@>=8.0.0 <9.0.0": "lockwright: GHSA-w5hq-g745-h8pq"
+    }
   }
 }
