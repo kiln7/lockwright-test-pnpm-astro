@@ -64,7 +64,8 @@
   "pnpm": {
     "overrides": {
       "picomatch@<4": "^2.3.2",
-      "vite@^7": "^7.3.2"
+      "vite@^7": "^7.3.2",
+      "basic-ftp@>=5.0.0 <6.0.0": "^6.2.4"
     }
   },
   "devDependencies": {
@@ -89,5 +90,10 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.56.1",
     "valibot": "^1.2.0"
+  },
+  "//lockwright": {
+    "pnpm.overrides": {
+      "basic-ftp@>=5.0.0 <6.0.0": "lockwright: GHSA-5pm8-86m8-9m6r, GHSA-c475-qrg2-pj4r, GHSA-r4jh-29pc-gfqr"
+    }
   }
 }
