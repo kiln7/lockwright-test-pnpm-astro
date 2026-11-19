@@ -64,7 +64,8 @@
   "pnpm": {
     "overrides": {
       "picomatch@<4": "^2.3.2",
-      "vite@^7": "^7.3.2"
+      "vite@^7": "^7.3.2",
+      "@opentelemetry/propagator-jaeger@>=1.0.0 <2.0.0": "^2.9.0"
     }
   },
   "devDependencies": {
@@ -89,5 +90,10 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.56.1",
     "valibot": "^1.2.0"
+  },
+  "//lockwright": {
+    "pnpm.overrides": {
+      "@opentelemetry/propagator-jaeger@>=1.0.0 <2.0.0": "lockwright: GHSA-45rx-2jwx-cxfr"
+    }
   }
 }
