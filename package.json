@@ -64,7 +64,8 @@
   "pnpm": {
     "overrides": {
       "picomatch@<4": "^2.3.2",
-      "vite@^7": "^7.3.2"
+      "vite@^7": "^7.3.2",
+      "markdown-it@>=12.0.0 <13.0.0": "^14.3.3"
     }
   },
   "devDependencies": {
@@ -89,5 +90,10 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.56.1",
     "valibot": "^1.2.0"
+  },
+  "//lockwright": {
+    "pnpm.overrides": {
+      "markdown-it@>=12.0.0 <13.0.0": "lockwright: GHSA-253c-mchw-3w2r, GHSA-6v5v-wf23-fmfq, GHSA-gfr2-rv44-r23c, GHSA-r7fv-28h4-cvq7, GHSA-vfgh-jcmw-g37q"
+    }
   }
 }
