@@ -64,7 +64,10 @@
   "pnpm": {
     "overrides": {
       "picomatch@<4": "^2.3.2",
-      "vite@^7": "^7.3.2"
+      "vite@^7": "^7.3.2",
+      "@xmldom/xmldom@>=0.9.0 <0.9.12": "^0.9.12",
+      "ip-address@>=10.0.0 <10.7.4": "^10.7.4",
+      "katex@>=0.16.0 <0.17.0": "^0.18.2"
     }
   },
   "devDependencies": {
@@ -89,5 +92,12 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.56.1",
     "valibot": "^1.2.0"
+  },
+  "//lockwright": {
+    "pnpm.overrides": {
+      "@xmldom/xmldom@>=0.9.0 <0.9.12": "lockwright: GHSA-27p8-2357-5qqv, GHSA-2v35-w6hq-6mfw, GHSA-3px3-54cx-rmw9, GHSA-4w3w-2rp5-g8jm, GHSA-6gmq-8vp8-gcm6, GHSA-6h8r-xr42-gp59, GHSA-6mj3-qw4j-hgrw, GHSA-8344-3jmq-59r6, GHSA-93r5-fhx6-vmg9, GHSA-965w-775f-mr7g, GHSA-c7q8-3ch8-vqpv, GHSA-f6ww-3ggp-fr8h, GHSA-g53g-w8rj-fmg7, GHSA-j759-j44w-7fr8, GHSA-w2rr-34g9-rvrj, GHSA-wh4c-j3r5-mjhp, GHSA-x6wf-f3px-wcqx",
+      "ip-address@>=10.0.0 <10.7.4": "lockwright: GHSA-22jq-vg5j-6vgg, GHSA-2vr4-cq9g-pvrc, GHSA-4xrf-jv44-h6hh, GHSA-h3mg-xc3c-68pw, GHSA-j6r3-76f7-8jcv, GHSA-mwp4-54f8-5fhr, GHSA-rpw4-54j3-4h4q, GHSA-rxp7-6hxx-x8q5, GHSA-v2v4-37r5-5v8g",
+      "katex@>=0.16.0 <0.17.0": "lockwright: GHSA-238p-pmpm-9mq7"
+    }
   }
 }
