@@ -7,6 +7,8 @@ settings:
 overrides:
   picomatch@<4: ^2.3.2
   vite@^7: ^7.3.2
+  zod@>=3.0.0 <4.0.0: ^4.6.6
+  zod@>=4.0.0 <4.6.6: ^4.6.6
 
 patchedDependencies:
   '@changesets/get-github-info@0.7.0':
@@ -35,10 +37,10 @@ importers:
         version: 2.29.8(@types/node@22.19.11)
       '@flue/cli':
         specifier: ^0.3.10
-        version: 0.3.10(typescript@5.9.3)(wrangler@4.83.0)(ws@8.19.0)(zod@4.3.6)
+        version: 0.3.10(typescript@5.9.3)(wrangler@4.83.0)(ws@8.19.0)(zod@4.6.7)
       '@flue/sdk':
         specifier: ^0.3.10
-        version: 0.3.10(typescript@5.9.3)(wrangler@4.83.0)(ws@8.19.0)(zod@4.3.6)
+        version: 0.3.10(typescript@5.9.3)(wrangler@4.83.0)(ws@8.19.0)(zod@4.6.7)
       '@types/node':
         specifier: ^22.10.6
         version: 22.19.11
@@ -689,8 +691,8 @@ importers:
         specifier: ^22.0.0
         version: 22.0.0
       zod:
-        specifier: ^4.3.6
-        version: 4.3.6
+        specifier: ^4.6.6
+        version: 4.6.7
     devDependencies:
       '@astrojs/check':
         specifier: workspace:*
@@ -809,8 +811,8 @@ importers:
         specifier: ^0.1.3
         version: 0.1.3
       zod:
-        specifier: ^4.3.6
-        version: 4.3.6
+        specifier: ^4.6.6
+        version: 4.6.7
     devDependencies:
       '@types/xml2js':
         specifier: ^0.4.14
@@ -2743,8 +2745,8 @@ importers:
         specifier: workspace:*
         version: link:../../..
       zod:
-        specifier: ^4.3.6
-        version: 4.3.6
+        specifier: ^4.6.6
+        version: 4.6.7
 
   packages/astro/test/fixtures/content-collections-type-inference:
     dependencies:
@@ -4398,8 +4400,8 @@ importers:
         specifier: ^22.0.0
         version: 22.0.0
       zod:
-        specifier: ^4.3.6
-        version: 4.3.6
+        specifier: ^4.6.6
+        version: 4.6.7
     devDependencies:
       '@types/yargs-parser':
         specifier: ^21.0.3
@@ -4556,13 +4558,13 @@ importers:
         version: 18.3.1(react@18.3.1)
       simple-stack-form:
         specifier: ^0.1.12
-        version: 0.1.12(astro@packages+astro)(zod@4.3.6)
+        version: 0.1.12(astro@packages+astro)(zod@4.6.7)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
       zod:
-        specifier: ^4.3.6
-        version: 4.3.6
+        specifier: ^4.6.6
+        version: 4.6.7
 
   packages/integrations/alpinejs:
     devDependencies:
@@ -6085,8 +6087,8 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0
       zod:
-        specifier: ^4.3.6
-        version: 4.3.6
+        specifier: ^4.6.6
+        version: 4.6.7
     devDependencies:
       '@types/xml2js':
         specifier: ^0.4.14
@@ -7072,7 +7074,7 @@ packages:
     resolution: {integrity: sha512-LAmu761tSN9r66ixvmciswUj/ZC+1Q4iAfpedTfSVLeswRwnY3n2Nb6Tsk+cLPP28aLOPWeMgIuTuCcMC6W/iw==}
     hasBin: true
     peerDependencies:
-      zod: ^3.25.0 || ^4.0.0
+      zod: ^4.6.6
     peerDependenciesMeta:
       zod:
         optional: true
@@ -7716,7 +7718,7 @@ packages:
       '@modelcontextprotocol/sdk': ^1.25.0
       '@tanstack/ai': '>=0.8.0 <1.0.0'
       ai: ^6.0.0
-      zod: ^4.0.0
+      zod: ^4.6.6
     peerDependenciesMeta:
       '@modelcontextprotocol/sdk':
         optional: true
@@ -14419,7 +14421,7 @@ packages:
     hasBin: true
     peerDependencies:
       ws: ^8.18.0
-      zod: ^3.25 || ^4.0
+      zod: ^4.6.6
     peerDependenciesMeta:
       ws:
         optional: true
@@ -15503,7 +15505,7 @@ packages:
     hasBin: true
     peerDependencies:
       astro: ^3.6.0 || ^4.0.0
-      zod: ^3.22.4
+      zod: ^4.6.6
 
   sirv@3.0.2:
     resolution: {integrity: sha512-2wcC/oGxHis/BoHkkPwldgiPSYcpZK3JU28WoMVv55yHJgcZ8rlXvuG9iZggz+sU1d4bRgIGASwyWqjxu3FM0g==}
@@ -16896,13 +16898,10 @@ packages:
   zod-to-json-schema@3.25.2:
     resolution: {integrity: sha512-O/PgfnpT1xKSDeQYSCfRI5Gy3hPf91mKVDuYLUHZJMiDFptvP41MSnWofm8dnCm0256ZNfZIM7DSzuSMAFnjHA==}
     peerDependencies:
-      zod: ^3.25.28 || ^4
+      zod: ^4.6.6
 
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
-
-  zod@4.3.6:
-    resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
+  zod@4.6.7:
+    resolution: {integrity: sha512-g8W2D2kU6a8untc053fX1uVBKzM7yqAxW/3zwk83+6RyF2+SKOuV+c0wBDhUwzV1PaGapmZH+rmcUzPf+3CGwg==}
 
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
@@ -16911,11 +16910,11 @@ snapshots:
 
   '@antfu/utils@0.7.10': {}
 
-  '@anthropic-ai/sdk@0.91.1(zod@4.3.6)':
+  '@anthropic-ai/sdk@0.91.1(zod@4.6.7)':
     dependencies:
       json-schema-to-ts: 3.1.1
     optionalDependencies:
-      zod: 4.3.6
+      zod: 4.6.7
 
   '@assemblyscript/loader@0.19.23': {}
 
@@ -18021,19 +18020,19 @@ snapshots:
       '@clack/core': 1.1.0
       sisteransi: 1.0.5
 
-  '@cloudflare/codemode@0.3.4(@modelcontextprotocol/sdk@1.29.0)(zod@4.3.6)':
+  '@cloudflare/codemode@0.3.4(@modelcontextprotocol/sdk@1.29.0)(zod@4.6.7)':
     dependencies:
       '@types/json-schema': 7.0.15
       acorn: 8.16.0
     optionalDependencies:
       '@modelcontextprotocol/sdk': 1.29.0
-      zod: 4.3.6
+      zod: 4.6.7
 
   '@cloudflare/kv-asset-handler@0.4.2': {}
 
-  '@cloudflare/shell@0.3.6(@modelcontextprotocol/sdk@1.29.0)(zod@4.3.6)':
+  '@cloudflare/shell@0.3.6(@modelcontextprotocol/sdk@1.29.0)(zod@4.6.7)':
     dependencies:
-      '@cloudflare/codemode': 0.3.4(@modelcontextprotocol/sdk@1.29.0)(zod@4.3.6)
+      '@cloudflare/codemode': 0.3.4(@modelcontextprotocol/sdk@1.29.0)(zod@4.6.7)
       isomorphic-git: 1.37.6
     transitivePeerDependencies:
       - '@modelcontextprotocol/sdk'
@@ -18891,9 +18890,9 @@ snapshots:
       fastq: 1.20.1
       glob: 13.0.3
 
-  '@flue/cli@0.3.10(typescript@5.9.3)(wrangler@4.83.0)(ws@8.19.0)(zod@4.3.6)':
+  '@flue/cli@0.3.10(typescript@5.9.3)(wrangler@4.83.0)(ws@8.19.0)(zod@4.6.7)':
     dependencies:
-      '@flue/sdk': 0.3.10(typescript@5.9.3)(wrangler@4.83.0)(ws@8.19.0)(zod@4.3.6)
+      '@flue/sdk': 0.3.10(typescript@5.9.3)(wrangler@4.83.0)(ws@8.19.0)(zod@4.6.7)
       '@vercel/detect-agent': 1.2.3
     transitivePeerDependencies:
       - '@cfworker/json-schema'
@@ -18908,12 +18907,12 @@ snapshots:
       - ws
       - zod
 
-  '@flue/sdk@0.3.10(typescript@5.9.3)(wrangler@4.83.0)(ws@8.19.0)(zod@4.3.6)':
+  '@flue/sdk@0.3.10(typescript@5.9.3)(wrangler@4.83.0)(ws@8.19.0)(zod@4.6.7)':
     dependencies:
-      '@cloudflare/shell': 0.3.6(@modelcontextprotocol/sdk@1.29.0)(zod@4.3.6)
+      '@cloudflare/shell': 0.3.6(@modelcontextprotocol/sdk@1.29.0)(zod@4.6.7)
       '@hono/node-server': 1.19.14(hono@4.12.16)
-      '@mariozechner/pi-agent-core': 0.71.1(@modelcontextprotocol/sdk@1.29.0)(ws@8.19.0)(zod@4.3.6)
-      '@mariozechner/pi-ai': 0.71.1(@modelcontextprotocol/sdk@1.29.0)(ws@8.19.0)(zod@4.3.6)
+      '@mariozechner/pi-agent-core': 0.71.1(@modelcontextprotocol/sdk@1.29.0)(ws@8.19.0)(zod@4.6.7)
+      '@mariozechner/pi-ai': 0.71.1(@modelcontextprotocol/sdk@1.29.0)(ws@8.19.0)(zod@4.6.7)
       '@modelcontextprotocol/sdk': 1.29.0
       '@valibot/to-json-schema': 1.5.0(valibot@1.2.0(typescript@5.9.3))
       esbuild: 0.25.5
@@ -19236,9 +19235,9 @@ snapshots:
       - encoding
       - supports-color
 
-  '@mariozechner/pi-agent-core@0.71.1(@modelcontextprotocol/sdk@1.29.0)(ws@8.19.0)(zod@4.3.6)':
+  '@mariozechner/pi-agent-core@0.71.1(@modelcontextprotocol/sdk@1.29.0)(ws@8.19.0)(zod@4.6.7)':
     dependencies:
-      '@mariozechner/pi-ai': 0.71.1(@modelcontextprotocol/sdk@1.29.0)(ws@8.19.0)(zod@4.3.6)
+      '@mariozechner/pi-ai': 0.71.1(@modelcontextprotocol/sdk@1.29.0)(ws@8.19.0)(zod@4.6.7)
       typebox: 1.1.37
     transitivePeerDependencies:
       - '@modelcontextprotocol/sdk'
@@ -19249,19 +19248,19 @@ snapshots:
       - ws
       - zod
 
-  '@mariozechner/pi-ai@0.71.1(@modelcontextprotocol/sdk@1.29.0)(ws@8.19.0)(zod@4.3.6)':
+  '@mariozechner/pi-ai@0.71.1(@modelcontextprotocol/sdk@1.29.0)(ws@8.19.0)(zod@4.6.7)':
     dependencies:
-      '@anthropic-ai/sdk': 0.91.1(zod@4.3.6)
+      '@anthropic-ai/sdk': 0.91.1(zod@4.6.7)
       '@aws-sdk/client-bedrock-runtime': 3.1041.0
       '@google/genai': 1.51.0(@modelcontextprotocol/sdk@1.29.0)
       '@mistralai/mistralai': 2.2.1
       chalk: 5.6.2
-      openai: 6.26.0(ws@8.19.0)(zod@4.3.6)
+      openai: 6.26.0(ws@8.19.0)(zod@4.6.7)
       partial-json: 0.1.7
       proxy-agent: 6.5.0
       typebox: 1.1.37
       undici: 7.24.8
-      zod-to-json-schema: 3.25.2(zod@4.3.6)
+      zod-to-json-schema: 3.25.2(zod@4.6.7)
     transitivePeerDependencies:
       - '@modelcontextprotocol/sdk'
       - aws-crt
@@ -19315,8 +19314,8 @@ snapshots:
   '@mistralai/mistralai@2.2.1':
     dependencies:
       ws: 8.19.0
-      zod: 4.3.6
-      zod-to-json-schema: 3.25.2(zod@4.3.6)
+      zod: 4.6.7
+      zod-to-json-schema: 3.25.2(zod@4.6.7)
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -19340,8 +19339,8 @@ snapshots:
       json-schema-typed: 8.0.2
       pkce-challenge: 5.0.1
       raw-body: 3.0.2
-      zod: 4.3.6
-      zod-to-json-schema: 3.25.2(zod@4.3.6)
+      zod: 4.6.7
+      zod-to-json-schema: 3.25.2(zod@4.6.7)
     transitivePeerDependencies:
       - supports-color
 
@@ -19430,7 +19429,7 @@ snapshots:
       validate-npm-package-name: 5.0.1
       yaml: 2.8.3
       yargs: 17.7.2
-      zod: 4.3.6
+      zod: 4.6.7
 
   '@netlify/dev-utils@4.3.3':
     dependencies:
@@ -19702,7 +19701,7 @@ snapshots:
       unixify: 1.0.0
       urlpattern-polyfill: 8.0.2
       yargs: 17.7.2
-      zod: 3.25.76
+      zod: 4.6.7
     transitivePeerDependencies:
       - bare-abort-controller
       - encoding
@@ -24233,7 +24232,7 @@ snapshots:
       smol-toml: 1.6.1
       strip-json-comments: 5.0.3
       typescript: 5.9.3
-      zod: 4.3.6
+      zod: 4.6.7
 
   kolorist@1.8.0: {}
 
@@ -25376,10 +25375,10 @@ snapshots:
       is-inside-container: 1.0.0
       wsl-utils: 0.1.0
 
-  openai@6.26.0(ws@8.19.0)(zod@4.3.6):
+  openai@6.26.0(ws@8.19.0)(zod@4.6.7):
     optionalDependencies:
       ws: 8.19.0
-      zod: 4.3.6
+      zod: 4.6.7
 
   optionator@0.9.4:
     dependencies:
@@ -26789,14 +26788,14 @@ snapshots:
 
   simple-invariant@2.0.1: {}
 
-  simple-stack-form@0.1.12(astro@packages+astro)(zod@4.3.6):
+  simple-stack-form@0.1.12(astro@packages+astro)(zod@4.6.7):
     dependencies:
       '@clack/prompts': 0.7.0
       astro: link:packages/astro
       fs-extra: 11.3.3
       just-map-values: 3.2.0
       kleur: 4.1.5
-      zod: 4.3.6
+      zod: 4.6.7
 
   sirv@3.0.2:
     dependencies:
@@ -28220,12 +28219,10 @@ snapshots:
       compress-commons: 6.0.2
       readable-stream: 4.7.0
 
-  zod-to-json-schema@3.25.2(zod@4.3.6):
+  zod-to-json-schema@3.25.2(zod@4.6.7):
     dependencies:
-      zod: 4.3.6
+      zod: 4.6.7
 
-  zod@3.25.76: {}
-
-  zod@4.3.6: {}
+  zod@4.6.7: {}
 
   zwitch@2.0.4: {}
