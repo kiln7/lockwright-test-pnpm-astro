@@ -64,7 +64,19 @@
   "pnpm": {
     "overrides": {
       "picomatch@<4": "^2.3.2",
-      "vite@^7": "^7.3.2"
+      "vite@^7": "^7.3.2",
+      "devalue@>=5.0.0 <5.9.3": "^5.9.3",
+      "esbuild@>=0.27.0 <0.28.0": "^0.28.1",
+      "fast-xml-parser@>=5.0.0 <5.12.0": "^5.12.0",
+      "hono@>=4.0.0 <4.13.16": "^4.13.16",
+      "js-yaml@>=4.0.0 <4.3.2": "^4.3.2",
+      "path-to-regexp@>=6.0.0 <6.3.0": "^6.3.0",
+      "seroval@>=1.0.0 <1.6.8": "^1.6.8",
+      "sharp@>=0.34.0 <0.35.0": "^0.35.5",
+      "smol-toml@>=1.0.0 <1.9.0": "^1.9.0",
+      "undici@>=7.0.0 <7.30.1": "^7.30.1",
+      "ws@>=8.0.0 <8.21.0": "^8.21.0",
+      "yaml@>=2.0.0 <2.8.3": "^2.8.3"
     }
   },
   "devDependencies": {
@@ -89,5 +101,21 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.56.1",
     "valibot": "^1.2.0"
+  },
+  "//lockwright": {
+    "pnpm.overrides": {
+      "devalue@>=5.0.0 <5.9.3": "lockwright: GHSA-4q55-j62x-fr9h, GHSA-77vg-94rm-hx3p, GHSA-9rgm-9g3h-6x36, GHSA-hx4r-w6wj-j8fg, GHSA-j22f-vq7h-c4qm, GHSA-mcm9-63f2-9j32, GHSA-r9w8-h9r3-54w4, GHSA-wf3x-273g-mvxv",
+      "esbuild@>=0.27.0 <0.28.0": "lockwright: GHSA-67mh-4wv8-2f99, GHSA-g7r4-m6w7-qqqr",
+      "fast-xml-parser@>=5.0.0 <5.12.0": "lockwright: GHSA-37qj-frw5-hhjh, GHSA-474x-hrwr-fgx4, GHSA-8gc5-j5rx-235r, GHSA-fj3w-jwp8-x2g3, GHSA-gh4j-gqv2-49f6, GHSA-jmr7-xgp7-cmfj, GHSA-jp2q-39xq-3w4g, GHSA-m7jm-9gc2-mpf2",
+      "hono@>=4.0.0 <4.13.16": "lockwright: GHSA-2gcr-mfcq-wcc3, GHSA-3gg2-335m-rxc6, GHSA-3hrh-pfw6-9m5x, GHSA-46wx-v44x-9hh2, GHSA-4h7h-rv7c-7m2v, GHSA-4m76-xfj5-7975, GHSA-54fx-42gc-7vw4, GHSA-5r4p-p66f-jhc7, GHSA-79qm-7rj5-m7r9, GHSA-88fw-hqm2-52qc, GHSA-8j4g-w8fx-2239, GHSA-crvj-82cr-hjcx, GHSA-f23p-vx2j-j53r, GHSA-f577-qrjj-4474, GHSA-g6gw-c38x-mqfc, GHSA-gqvv-2mrq-wpjv, GHSA-h7mg-cq63-vhpq, GHSA-hm8q-7f3q-5f36, GHSA-hvrm-45r6-mjfj, GHSA-hxh3-vqpv-xpqv, GHSA-j6c9-x7qj-28xf, GHSA-p77w-8qqv-26rm, GHSA-qp7p-654g-cw7p, GHSA-rv63-4mwf-qqc2, GHSA-w62v-xxxg-mg59, GHSA-wgpf-jwqj-8h8p, GHSA-wwfh-h76j-fc44, GHSA-xgm2-5f3f-mvvc, GHSA-xrhx-7g5j-rcj5",
+      "js-yaml@>=4.0.0 <4.3.2": "lockwright: GHSA-2883-xcg3-v3hh, GHSA-52cp-r559-cp3m, GHSA-5p4m-2wfm-xmqj, GHSA-h67p-54hq-rp68",
+      "path-to-regexp@>=6.0.0 <6.3.0": "lockwright: GHSA-9wv6-86v2-598j",
+      "seroval@>=1.0.0 <1.6.8": "lockwright: GHSA-7rv5-mrxv-xcr9, GHSA-97r2-qh9m-474h, GHSA-jp82-f5mq-hwhp, GHSA-mv8w-475r-vwqw, GHSA-p6vx-979v-rg4c, GHSA-wp97-x4hv-qvhp",
+      "sharp@>=0.34.0 <0.35.0": "lockwright: GHSA-f88m-g3jw-g9cj, GHSA-rgj7-g3m4-5g8c, GHSA-wq5f-xc86-pv6w",
+      "smol-toml@>=1.0.0 <1.9.0": "lockwright: GHSA-7w5x-hrqm-74c2, GHSA-r4xh-jqrq-34v2",
+      "undici@>=7.0.0 <7.30.1": "lockwright: GHSA-2gqq-gqf2-x968, GHSA-2jfj-6hjv-fm6j, GHSA-2m5v-pch6-74hx, GHSA-35p6-xmwp-9g52, GHSA-3xpg-4rpp-hhhm, GHSA-4cwx-7wf7-3272, GHSA-4qv8-2p9j-2685, GHSA-4w7w-5xrc-9h26, GHSA-55wc-3pg8-jfw6, GHSA-8436-99hf-9mmv, GHSA-8xcm-r25x-g524, GHSA-9fm3-97px-rjf6, GHSA-f72v-6w45-q472, GHSA-g8m3-5g58-fq7m, GHSA-hm92-r4w5-c3mj, GHSA-jr45-8vmc-qm54, GHSA-m8rv-5g2x-5cg5, GHSA-p88m-4jfj-68fv, GHSA-pmjh-fq2x-6v4x, GHSA-pr7r-676h-xcf6, GHSA-qrxm-fqhp-jwvm, GHSA-r53p-7pc4-xj5r, GHSA-rfgv-xxqx-mfg5, GHSA-rx4f-c7p8-82vq, GHSA-v3r7-h72x-cjcm, GHSA-vmh5-mc38-953g, GHSA-vxpw-j846-p89q, GHSA-w293-vg96-wgc3, GHSA-xjj6-f33q-929c",
+      "ws@>=8.0.0 <8.21.0": "lockwright: GHSA-58qx-3vcg-4xpx, GHSA-96hv-2xvq-fx4p",
+      "yaml@>=2.0.0 <2.8.3": "lockwright: GHSA-48c2-rrv3-qjmp"
+    }
   }
 }
